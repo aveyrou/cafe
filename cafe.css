@@ -186,6 +186,7 @@ form button:hover {
 .info p {
     font-size: 28px;
     color: rgb(77, 76, 76);
+    font-style: italic;
 }
 
 #up {
@@ -210,4 +211,5 @@ footer {
     padding: 15px;
     text-align: center;
     box-shadow: 0 -5px 15px rgb(128, 128, 128);
+
 }
