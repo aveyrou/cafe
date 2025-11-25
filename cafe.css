@@ -35,8 +35,25 @@ header {
     text-decoration: underline;
 }
 
+.navigation a:active {
+    color: rgb(63, 61, 61);
+}
+
 h1 {
+    position: relative;
     text-align: center;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 5px;
+    background-color: rgba(211, 37, 37, 0.753);
 }
 
 .container {
@@ -206,11 +223,31 @@ form button:hover {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
     color: rgba(211, 37, 37, 0.753);
     font-size: 24px;
     padding: 15px;
     text-align: center;
     box-shadow: 0 -5px 15px rgb(128, 128, 128);
+}
+
+.about {
+    left: 500px;
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    left: 400px;
+    bottom: 40px;
+}
+
+.social a {
+    color: rgba(211, 37, 37, 0.753);
+    font-size: 40px;
 }
 
 @media (max-width: 400px) {
@@ -285,6 +322,12 @@ footer {
         font-size: 18px;
     }
 
+    .social {
+        gap: 20px;
+        left: 90px;
+        bottom: 310px;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -357,6 +400,12 @@ footer {
 
     .info p {
         font-size: 18px;
+    }
+
+    .social {
+        gap: 20px;
+        left: 115px;
+        bottom: 310px;
     }
 
 }
